@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="horocopo text-center">
+        <h3 class="display-6">♑ ¡¡ Los Signos del Zodiaco !! ♍</h3>
+    </div>
+    <br>
+    <div class="signos">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-2 g-4">
+
+            <div class="col g-4" *ngFor="let sigs of signoss">
+                <img src="../../../../assets/imagenP4/{{sigs.simboloSig}}" height="70" width="70" />
+                <button type="button" class="btn-S btn btn-success btn-lg">{{sigs.nombre}}</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <br>
+    <div class="horocopo text-center">
+        <h3 class="display-6">♑ ¡¡ Descripcion de Los Signos del Zodiaco !! ♍</h3>
+    </div>
+    <br>
+    <section *ngFor="let horos of horoscopo">
+        <div class="row bg-success text-white">
+            <h2>{{horos.tituloo}}</h2>
+        </div>
+        <div class="row">
+            <div class="col-8 bg-body-secondary">
+                <p>
+                    {{horos.descripcion1}}
+                    <br>
+                    {{horos.descripcion2}}
+                </p>
+            </div>
+            <div class="col-4">
+                <img src="../../../../assets/imagenP4/{{horos.img}}" height="145" width="145" class="img">
+            </div>
+        </div>
+    </section>
+    <br>
+</div>

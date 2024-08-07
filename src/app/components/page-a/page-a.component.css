@@ -1,0 +1,39 @@
+.letra{
+    font-size:10%;
+    color: #6e117a;
+    background-color: rgba(0, 255, 255, 0.24);
+    width:80%; 
+    border: 5px; 
+    font-style: italic;
+    text-align: center;	 
+}
+
+.contenido{
+    display: inline;
+    height: auto;
+    font-style: italic;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    /* articulos */
+    margin-bottom: 1rem;
+}
+.img-fluid{
+    height: 70%;
+    width: 70%;
+} 
+
+.letra2{
+    position: relative;
+    top: -14px;
+    color: #fff;
+    background-color: #712cf9;
+    width:400%;  
+    font-style: italic;
+    text-align: center;	  
+}
+
+aside{
+    margin-left: 5rem;
+}

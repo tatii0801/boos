@@ -1,0 +1,92 @@
+<br>
+<section>
+        <div class="row">
+            <div class="row col-8 col-md-8 col-sm-8">
+                <div class="row row-cols-lg-8 row-cols-md-8 row-cols-1 g-4 d-none d-md-block">
+                    <header class="letra3">
+                        <h3>💰 ¡¡ Cotización de divisas !! 💰</h3>
+                    </header>
+                    <div class="contenedor-tabla">
+                        <table class="table table-bordered table-light table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col"> </th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/usd.png" height="35" width="35"><br>USD</th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/eur.png" height="35" width="35"><br>EUR</th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/gbp.png" height="35" width="35"><br>GBP</th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/jpy.png" height="35" width="35"><br>JPY</th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/cny.png" height="35" width="35"><br>CNY</th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/aud.png" height="35" width="35"><br>AUD</th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/btc.png" height="35" width="35"><br>BTC</th>
+                                    <th scope="col"><img src="../../../../assets/imagenP4/arg.png" height="35" width="40"><br>ARS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let div of divisass">
+                                    <th><img src="../../../../assets/imagenP4/{{div.img}}" height="30" width="30"> {{div.nom}} <br> {{div.nom1}} </th>
+                                    <td>{{div.USD}}<br>{{div.USD1}}</td>
+                                    <td>{{div.EUR}}<br>{{div.EUR2}}</td>
+                                    <td>{{div.GBP}}<br>{{div.GBP3}}</td>
+                                    <td>{{div.JPY}}<br>{{div.JPY4}}</td>
+                                    <td>{{div.CNY}}<br>{{div.CNY5}}</td>
+                                    <td>{{div.AUD}}<br>{{div.AUD6}}</td>
+                                    <td>{{div.BTC}}<br>{{div.BTC7}}</td>
+                                    <td>{{div.ARS}}<br>{{div.ARS8}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4 col-sm-12">
+                <aside>
+                    <div class="formulario">
+                        <div class="letra3">
+                            <h3>Conversor De Divisas</h3>
+                            <br>
+                        </div>
+                        <form class="row g-3">
+                            <div class="d-grid gap-2 col-md-10 mx-auto">
+                                <label for="Cantidad" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" id="Cantidad" value="Cantidad">
+                            </div>
+                            <div class="d-grid gap-2 col-md-10 mx-auto">
+                                <label for="inputState" class="form-label">De: </label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Seleccione: </option>
+                                    <option value="USD">USD Dolares EEUU</option>
+                                    <option value="EUR">EUR Euro</option>
+                                    <option value="GBP">GBP Libra Esterlina</option>
+                                    <option value="RUB">RUB Rublo ruso</option>
+                                </select>
+                            </div>
+                            <div class="d-grid gap-2 col-md-10 mx-auto">
+                                <label for="inputState" class="form-label">A: </label>
+                                <select id="inputState" class="form-select">
+                                    <option value="" selected>Seleccione: </option>
+                                    <option value="USD">USD Dolares EEUU</option>
+                                    <option value="EUR">EUR Euro</option>
+                                    <option value="GBP">GBP Libra Esterlina</option>
+                                    <option value="JPY">JPY Yen</option>
+                                    <option value="CNY">CNY Yuan Renminbi</option>
+                                    <option value="AUD">AUD Dólar australiano</option>
+                                    <option value="BTC">BTC Bitcoin</option>
+                                    <option value="ARS">ARS Peso argentino</option>
+                                </select>
+                            </div>
+                            <div class="d-grid gap-2 col-md-10 mx-auto">
+                                <label for="algo" class="form-label"></label>
+                                <input type="text" class="form-control" id="algo">
+                            </div>
+                            <div class="d-grid gap-2 col-10 mx-auto">
+                                <button type="submit" class="btn btn-warning">Convertir --- > </button>
+                                <br>
+                            </div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+</section>

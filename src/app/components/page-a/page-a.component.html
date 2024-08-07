@@ -1,0 +1,68 @@
+<br>
+<div class="container">
+    <div class="contenido">
+        <div class="letra">
+            <h3 class="display-5">🎶 MIX - MUSIC 🎶</h3>
+        </div>
+    </div>
+    <section>
+        <div class="row">
+            <div class="row col-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 g-4">
+
+                    <div class="card" *ngFor="let music of musica">
+                        <img src="../../../../assets/imagenP4/{{music.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="titulito">{{music.titulito}}</h4>
+                            <p class="card-text">{{music.card1}}</p>
+                            <p class="card-text">{{music.card2}}</p>
+                            <p class="card-text">{{music.card3}}</p>
+                            <p class="card-text">{{music.card4}}</p>
+                            <p class="card-text">{{music.card5}}</p>
+
+
+                            <a href="{{music.link}}" target="_blank" class="btn btn-primary">A
+                                continuación
+                                encontraras el link. HAZ CLICK AQUI !!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-4 col-md-4 col-sm-4">
+                <div class="row row-cols-lg-4 row-cols-md-4 row-cols-1 g-4 d-none d-md-block">
+
+                    <aside>
+                        <div class="letra2">
+                            <h3 class="display-7 text-white">Recomendados!!!</h3>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 11rem;">
+                                <a href="https://www.youtube.com/watch?v=K5KAc5CoCuk" target="_blank"><img
+                                        src="../../../../assets/imagenP4/musica7.png" class="card-img-top"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <a href="https://www.youtube.com/watch?v=K5KAc5CoCuk" target="_blank">Sugeria
+                                        musical,
+                                        HAZ CLICK AQUI !!
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card" style="width: 11rem;">
+                                <img src="../../../../assets/imagenP4/gif-Imagen.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <br>
+                            <div class="card" style="width: 11rem;">
+                                <a href="https://www.mcdonalds.com.ar/" target="_blank"><img
+                                        src="../../../../assets/imagenP4/publicidad.jpeg"></a>
+                            </div>
+                            <br>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<br>
